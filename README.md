@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Granite](screenshot.png)
 
-Granite is a clean-room design with the feature set of FabFilter Pro-L 2. Granite 1.x matched the original Pro-L (October 2010). Version 2.0 adds:
+Granite is a limiter for mastering and mix-bus work. Version 2.0 adds:
 - eight styles
 - true-peak limiting
 - oversampling up to 32×
@@ -17,7 +17,7 @@ Granite is a clean-room design with the feature set of FabFilter Pro-L 2. Granit
 - display speeds and gain-reduction labels
 - a compact layout
 
-It was written from scratch, working only from FabFilter's public product pages, press releases and press coverage. No FabFilter code, binaries, presets, artwork or trademarks were used.
+It was written from scratch; no third-party code, presets or artwork are included.
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
@@ -107,27 +107,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Granite*
 
 ![Help window](screenshot-help.png)
 
-### Compared with FabFilter Pro-L 2
-
-| Pro-L 2 | Granite |
-|---|---|
-| Eight limiting algorithms | ✓ Clear, Punchy, Dynamic, Balanced, Aggressive, Modern, Bus, Safe |
-| True-peak limiting | ✓ |
-| Up to 32× linear-phase oversampling | ✓ |
-| Adjustable look-ahead, attack and release | ✓ |
-| Separate channel linking for transient and release stages | ✓ |
-| External sidechain triggering | ✓ |
-| Unity Gain and Audition Limiting | ✓ |
-| DC offset filter | ✓ |
-| Loudness metering to EBU R128, ITU-R BS.1770-4 and ATSC A/85 | ✓ M, S, I, LRA, TP, with targets |
-| True-peak and gain-reduction metering, K-System scales | ✓ |
-| Real-time level display with gain-reduction labels and display modes | ✓ Normal, fast, slow, off |
-| Dithering with three noise-shaping algorithms | ✓ Basic, Optimized, Weighted (plus flat) |
-| Compact interface | ✓ |
-| MIDI Learn, undo/redo, A/B, parameter interpolation, help hints, double-click entry | ✓ |
-| Mono, surround and Dolby Atmos (up to 9.1.6) | Stereo only (use on a mono track with link at 100%) |
-| AAX, AudioSuite, Pro Tools control surfaces | Not supported (needs Avid's SDK and signing) |
-| iPad version | Not supported |
+Not supported: Mono, surround and Dolby Atmos (up to 9.1.6); AAX, AudioSuite, Pro Tools control surfaces; iPad version.
 
 ## Build from source
 
@@ -190,7 +170,7 @@ New parameters, styles and presets are only ever appended, so saved sessions and
 ## Changelog
 
 - **2.1:** the preset browser searches names and categories as you type, and keeps Favourites.
-- **2.0:** Brings Granite up to Pro-L 2. New in this version:
+- **2.0:** New in this version:
   - Four new styles: Aggressive, Modern, Bus and Safe.
   - True-peak limiting.
   - Oversampling up to 32×.
@@ -213,5 +193,3 @@ New parameters, styles and presets are only ever appended, so saved sessions and
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Granite/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
 
 The Optimized and Weighted noise shapers are 3- and 9-tap error-feedback filters after the E- and F-weighted designs in R. Wannamaker, "Psychoacoustically Optimal Noise Shaping", JAES 40(7/8), 1992.
-
-"FabFilter", "FabFilter Pro-L" and "Pro-L 2" are trademarks of FabFilter Software Instruments. Granite is not affiliated with or endorsed by FabFilter.
