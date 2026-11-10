@@ -190,6 +190,6 @@ New parameters, styles and presets are only ever appended, so saved sessions and
 
 ## License
 
-[MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Granite/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
+[MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) (ISC license) and its bundled NanoVG (zlib license). `plugins/Granite/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
 
 The Optimized and Weighted noise shapers are 3- and 9-tap error-feedback filters after the E- and F-weighted designs in R. Wannamaker, "Psychoacoustically Optimal Noise Shaping", JAES 40(7/8), 1992.
